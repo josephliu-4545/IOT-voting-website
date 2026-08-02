@@ -1,16 +1,73 @@
-# React + Vite
+# IoT Vote — Smart Voting Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A real-time IoT voting website built with **Vite + React**. Connect IoT devices, cast votes, and monitor results through live analytics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Getting Started
 
-## React Compiler
+```bash
+npm install      # Install dependencies
+npm run dev      # Start dev server → http://localhost:5173
+npm run build    # Production build
+npm run preview  # Preview production build locally
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 📦 Libraries
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+| Library | Purpose |
+|---|---|
+| `react-router-dom` | Multi-page navigation |
+| `axios` | HTTP / API calls to IoT backend |
+| `recharts` | Charts & data visualization |
+
+---
+
+## 📁 Folder Structure
+
+```
+IOT frontend/
+├── index.html            ← Single HTML page React mounts into
+├── package.json          ← Dependencies & npm scripts
+├── vite.config.js        ← Vite build settings
+├── .gitignore            ← Files excluded from Git
+│
+├── public/               ← Static assets served as-is (favicons, etc.)
+│
+└── src/                  ← ⭐ Main working directory
+    ├── main.jsx          ← App entry point – mounts React into index.html
+    ├── index.css         ← Global styles & design tokens (colors, fonts, spacing)
+    ├── App.jsx           ← Root component: Router + Navbar + Footer layout
+    ├── App.css           ← Styles for Navbar, Hero, Cards, Footer
+    │
+    ├── components/       ← Reusable UI pieces used across multiple pages
+    │   ├── Navbar.jsx    ← Top navigation bar
+    │   └── Footer.jsx    ← Bottom footer
+    │
+    ├── pages/            ← One file per screen/route in the app
+    │   └── Home.jsx      ← Homepage (Hero + Stats + Features)
+    │
+    └── assets/           ← Images, SVGs, icons bundled by Vite
+```
+
+### Key Rule
+- **`components/`** → reusable pieces (navbar, buttons, cards — used on many pages)
+- **`pages/`** → full screens (Home, Dashboard, Login — one per route)
+- **`index.css`** → global rules & design tokens
+- **`App.css`** → styles tied to specific components
+
+---
+
+## 🎨 Design
+
+- **Color palette**: Indigo primary (`#4f63ff`) + teal accent (`#00c896`)
+- **Typography**: Inter (Google Fonts)
+- **Features**: Glassmorphism navbar, animated hero, hover-lift cards, fully responsive
+
+---
+
+## 🔗 Repository
+
+[https://github.com/josephliu-4545/IOT-voting-website](https://github.com/josephliu-4545/IOT-voting-website)
