@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import WelcomePage from "./pages/welcomePage";
 import ThankYouPage from "./pages/thankyouPage";
+import VotingPage from "./pages/VotingPage";
 
 import "./App.css";
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/welcome" element={<WelcomePage />} />
             <Route path="/thank-you" element={<ThankYouPage />} />
+            <Route path="/vote" element={<VotingPage />} />
           </Routes>
         </main>
 
