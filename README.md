@@ -66,6 +66,8 @@ IOT frontend/
 - **Typography**: Inter (Google Fonts)
 - **Features**: Glassmorphism navbar, animated hero, hover-lift cards, fully responsive
 
+http://localhost:5173/
+
 ---
 
 ## 🔗 Repository
