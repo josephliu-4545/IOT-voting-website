@@ -1,24 +1,20 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-
-import Home from "./pages/Home";
-import WelcomePage from "./pages/welcomePage";
-import ThankYouPage from "./pages/thankyouPage";
-import VotingPage from "./pages/VotingPage";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import WelcomePage from './pages/welcomePage';
+import ThankYouPage from './pages/thankyouPage';
+import VotingPage from './pages/VotingPage';
 import EventDetails from './pages/EventDetails';
 import GroupDetails from './pages/GroupDetails';
+import './App.css';
 
-import "./App.css";
-
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <div className="page-wrapper">
         <Navbar />
-
         <main className="page-main">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -29,9 +25,10 @@ export default function App() {
             <Route path="/groups/:groupId" element={<GroupDetails />} />
           </Routes>
         </main>
-
         <Footer />
       </div>
     </BrowserRouter>
   );
 }
+
+export default App;
