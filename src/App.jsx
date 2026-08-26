@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+
 import Home from './pages/Home';
 import WelcomePage from './pages/welcomePage';
 import ThankYouPage from './pages/thankyouPage';
@@ -14,7 +13,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="page-wrapper">
-        <Navbar />
         <main className="page-main">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -25,7 +23,6 @@ function App() {
             <Route path="/groups/:groupId" element={<GroupDetails />} />
           </Routes>
         </main>
-        <Footer />
       </div>
     </BrowserRouter>
   );
