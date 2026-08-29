@@ -7,6 +7,7 @@ import ThankYouPage from './pages/thankyouPage';
 import VotingPage from './pages/VotingPage';
 import EventDetails from './pages/EventDetails';
 import GroupDetails from './pages/GroupDetails';
+import AboutUs from './pages/AboutUs';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/vote" element={<VotingPage />} />
             <Route path="/event" element={<EventDetails />} />
             <Route path="/groups/:groupId" element={<GroupDetails />} />
+            <Route path="/about-us" element={<AboutUs />} />
           </Routes>
         </main>
       </div>
