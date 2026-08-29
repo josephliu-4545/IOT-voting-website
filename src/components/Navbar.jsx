@@ -26,9 +26,15 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li>
-                <a href="#features" id="nav-features" className="navbar__link">
-                  Features
-                </a>
+                <NavLink
+                  to="/about-us"
+                  id="nav-about"
+                  className={({ isActive }) =>
+                    'navbar__link' + (isActive ? ' navbar__link--active' : '')
+                  }
+                >
+                  About Us
+                </NavLink>
               </li>
               <li>
                 <a href="#how-it-works" id="nav-how" className="navbar__link">
