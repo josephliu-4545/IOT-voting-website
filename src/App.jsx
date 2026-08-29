@@ -7,7 +7,11 @@ import ThankYouPage from './pages/thankyouPage';
 import VotingPage from './pages/VotingPage';
 import EventDetails from './pages/EventDetails';
 import GroupDetails from './pages/GroupDetails';
-import AboutUs from './pages/AboutUs';
+
+import HistoryPage from "./pages/HistoryPage";
+import HistoryResultsPage from "./pages/HistoryResultsPage";
+import AboutUs from "./pages/AboutUs";
+
 import './App.css';
 
 function App() {
@@ -23,7 +27,11 @@ function App() {
             <Route path="/event" element={<EventDetails />} />
             <Route path="/events/:eventId" element={<EventDetails />} />
             <Route path="/groups/:groupId" element={<GroupDetails />} />
+
+            <Route path="/history" element={<HistoryPage />} />
+            <Route path="/results/:showId" element={<HistoryResultsPage />} />
             <Route path="/about-us" element={<AboutUs />} />
+
           </Routes>
         </main>
       </div>
