@@ -21,6 +21,7 @@ function App() {
             <Route path="/thank-you" element={<ThankYouPage />} />
             <Route path="/vote" element={<VotingPage />} />
             <Route path="/event" element={<EventDetails />} />
+            <Route path="/events/:eventId" element={<EventDetails />} />
             <Route path="/groups/:groupId" element={<GroupDetails />} />
             <Route path="/about-us" element={<AboutUs />} />
           </Routes>
