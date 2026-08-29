@@ -8,6 +8,8 @@ import ThankYouPage from './pages/thankyouPage';
 import VotingPage from './pages/VotingPage';
 import EventDetails from './pages/EventDetails';
 import GroupDetails from './pages/GroupDetails';
+import HistoryPage from "./pages/HistoryPage";
+import HistoryResultsPage from "./pages/HistoryResultsPage";
 import './App.css';
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
             <Route path="/vote" element={<VotingPage />} />
             <Route path="/event" element={<EventDetails />} />
             <Route path="/groups/:groupId" element={<GroupDetails />} />
+            <Route path="history" element={<HistoryPage />} />
+            <Route path="/results/:showId" element={<HistoryResultsPage />} />
           </Routes>
         </main>
         <Footer />
